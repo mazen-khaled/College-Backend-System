@@ -53,43 +53,40 @@ This is a Spring Boot-based backend application for managing student data in a c
 
 ## Example Requests
 **Add a New Student**
-```bash
-curl -X POST http://localhost:8080/v1/students \
--H "Content-Type: application/json" \
--d '{
+```HTTP
+POST http://localhost:8080/v1/students
+{
     "studentName": "Mazen Khaled",
     "studentEmail": "Mazen.Khaled@example.com",
     "studentDOB": "2001-03-14",
     "studentGPA": 3.8
-}'
+}
 ```
 
 **Get All Students**
-```bash
-curl -X GET http://localhost:8080/v1/students
+```HTTP
+GET http://localhost:8080/v1/students
 ```
 
 **Get Student by ID**
-```bash
-Copy
-curl -X GET http://localhost:8080/v1/students/1
+```HTTP
+GET http://localhost:8080/v1/students/2
 ```
 
 **Update Student**
-```bash
-curl -X PUT http://localhost:8080/v1/students \
--H "Content-Type: application/json" \
--d '{
+```HTTP
+PUT http://localhost:8080/v1/students
+{
     "studentId": 1,
     "studentName": "Mazen Khaled",
     "studentEmail": "Mazen.Khaled@example.com",
     "studentDOB": "2000-01-01",
     "studentGPA": 3.8
-}'
+}
 ```
 **Delete Student by ID**
-```bash
-curl -X DELETE http://localhost:8080/v1/students/1
+```HTTP 
+DELETE http://localhost:8080/v1/students/1
 ```
 
 ## Project Structure

@@ -14,7 +14,7 @@ This is a Spring Boot-based backend application for managing student data in a c
 
 - **Spring Boot**: Backend framework for building the application.
 - **Spring Data JPA**: For database operations and ORM.
-- **H2 Database**: In-memory database for development (can be replaced with MySQL, PostgreSQL, etc.).
+- **PostgreSQL Database**: In-memory database for development.
 - **Maven**: Build automation and dependency management.
 - **RESTful APIs**: Exposes endpoints for CRUD operations.
 
@@ -33,7 +33,6 @@ This is a Spring Boot-based backend application for managing student data in a c
 ### Prerequisites
 
 - Java 17 or higher.
-- Maven 3.x.x.
 - An IDE (e.g., IntelliJ IDEA, Eclipse).
 
 ### Installation

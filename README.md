@@ -1,107 +1,114 @@
-# College Student Management System (Backend)
+# College Management System
 
-This is a Spring Boot-based backend application for managing student data in a college system. It provides RESTful APIs to perform CRUD operations on student records.
+## 📋 Overview
+This **College Management System** is a full-stack application developed using **Spring Boot** for the backend and **HTML, CSS, JavaScript** for the frontend. It is designed to handle student information such as registration, profile management, and authentication.
 
-## Features
+The system enables administrators and users to:
+- Register new students.
+- Retrieve student information by ID or email.
+- Update student profiles.
+- Delete student records.
+- Handle login functionality with password verification.
 
-- **Create Student**: Add a new student to the system.
-- **Read Student**: Retrieve student details by ID or fetch all students.
-- **Update Student**: Modify existing student data.
-- **Delete Student**: Remove a student from the system by ID.
-- **Email Validation**: Ensures no duplicate email addresses are registered.
+## 🚀 Features
+### Backend (Spring Boot)
+- **CRUD Operations** for managing student data.
+- **JPA Repository** integration for seamless database communication.
+- **Email Validation** to ensure unique student emails.
+- **Exception Handling** for missing or invalid data.
+- **CORS Configuration** for secure cross-origin requests.
 
-## Technologies Used
+### Frontend
+- User-friendly login and sign-up forms.
+- Profile display and update functionality.
+- Dynamic interaction using JavaScript for form validation and profile updates.
 
-- **Spring Boot**: Backend framework for building the application.
-- **Spring Data JPA**: For database operations and ORM.
-- **PostgreSQL Database**: In-memory database for development.
-- **Maven**: Build automation and dependency management.
-- **RESTful APIs**: Exposes endpoints for CRUD operations.
+## 🏗️ Project Structure
+```
+com.example.College_System
+│
+├── CollegePackage.Student
+│   ├── ControllerLayer         # REST controllers
+│   ├── DataBaseLayer           # Student entity and database models
+│   ├── DatabaseConfig          # Database and CORS configuration
+│   ├── ReposatoryLayer         # JPA repository for database operations
+│   └── ServiceLayer            # Business logic services
+│
+├── Frontend
+│   ├── HTML_Files              # Login and profile pages
+│   ├── CSS_Files               # Styling for pages
+│   └── JS_Files                # JavaScript for interactivity
+```
 
-## API Endpoints
+## 🔧 Technologies Used
+- **Backend:** Java, Spring Boot, JPA, Hibernate
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** H2 Database (in-memory)
+- **Build Tool:** Maven
 
-| HTTP Method | Endpoint                | Description                              |
-|-------------|-------------------------|------------------------------------------|
-| `GET`       | `/v1/students`          | Get all students.                        |
-| `GET`       | `/v1/students/{id}`     | Get a student by ID.                     |
-| `POST`      | `/v1/students`          | Add a new student.                       |
-| `PUT`       | `/v1/students`          | Update an existing student.              |
-| `DELETE`    | `/v1/students/{id}`     | Delete a student by ID.                  |
-
-## Getting Started
-
+## 🛠️ Installation & Setup
 ### Prerequisites
+- Java JDK 17+
+- Maven
 
-- Java 17 or higher.
-- An IDE (e.g., IntelliJ IDEA, Eclipse).
-
-### Installation
-
-1. **Clone the repository**:
+### Backend Setup
+1. Clone the repository:
    ```bash
-   git clone https://github.com/mazen-khaled/College-Backend-System.git
-   cd College-Backend-System
-   
-2. **Clone the repository**:
+   git clone https://github.com/yourusername/college-management-system.git
+   ```
+2. Navigate to the project directory:
    ```bash
-   mvn clean install
-   
-3. **Run the application**:
+   cd college-management-system
+   ```
+3. Run the application:
    ```bash
    mvn spring-boot:run
+   ```
 
-## Example Requests
-**Add a New Student**
-```HTTP
-POST http://localhost:8080/v1/students
+### Frontend Setup
+1. Open the HTML files directly in your browser, or use a local server (e.g., **Live Server** extension in VSCode).
+
+## 📖 API Endpoints
+| Method | Endpoint               | Description                         |
+|--------|------------------------|-------------------------------------|
+| GET    | `/v1/students`        | Retrieve all students               |
+| GET    | `/v1/students/id/{id}`| Get student by ID                   |
+| GET    | `/v1/students/email/{email}` | Get student by email         |
+| POST   | `/v1/students`        | Add a new student                   |
+| PUT    | `/v1/students`        | Update an existing student          |
+| DELETE | `/v1/students/{id}`   | Delete student by ID                |
+
+## 🎯 Usage Example
+**POST** Add New Student:
+```json
 {
-    "studentName": "Mazen Khaled",
-    "studentEmail": "Mazen.Khaled@example.com",
-    "studentDOB": "2001-03-14",
-    "studentGPA": 3.8
+  "studentName": "John Doe",
+  "studentEmail": "johndoe@example.com",
+  "studentPassword": "securepass123",
+  "studentDOB": "2000-05-15",
+  "studentGPA": 3.5
 }
 ```
 
-**Get All Students**
-```HTTP
-GET http://localhost:8080/v1/students
+**GET** Retrieve Student by ID:
+```
+GET /v1/students/id/1
 ```
 
-**Get Student by ID**
-```HTTP
-GET http://localhost:8080/v1/students/2
-```
+## 💡 Future Improvements
+- Role-based authentication (Admin, Student).
+- Integration with MySQL or PostgreSQL.
+- Enhanced frontend with React or Angular.
+- Implement JWT-based authentication.
 
-**Update Student**
-```HTTP
-PUT http://localhost:8080/v1/students
-{
-    "studentId": 1,
-    "studentName": "Mazen Khaled",
-    "studentEmail": "Mazen.Khaled@example.com",
-    "studentDOB": "2000-01-01",
-    "studentGPA": 3.8
-}
-```
-**Delete Student by ID**
-```HTTP 
-DELETE http://localhost:8080/v1/students/1
-```
+## 🤝 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-## Project Structure
-src/main/java
-```
-├── com.example.College_System
-│   ├── CollegePackage
-│   │   ├── Student
-│   │   │   ├── ControllerLayer
-│   │   │   │   └── StudentControl.java
-│   │   │   ├── DataBaseLayer
-│   │   │   │   └── Student.java
-│   │   │   ├── DatabaseConfig
-│   │   │   │   └── StudentConfig.java
-│   │   │   ├── ReposatoryLayer
-│   │   │   │   └── StudentRepository.java
-│   │   │   └── ServiceLayer
-│   │   │       └── StudentService.java
-│   └── CollegeSystemApplication.java
+## 📝 License
+This project is licensed under the MIT License.
+
+## 📬 Contact
+For questions or feedback:
+- Email: [your.email@example.com](mailto:your.email@example.com)
+
+Enjoy using the **College Management System**! 🎓

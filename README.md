@@ -5,7 +5,7 @@ This **College Management System** is a full-stack application developed using *
 
 ### The system enables administrators and users to:
 
-#### 1. Sign-Up Page
+#### 1. Sign-Up (POST API)
 <p align="center">
   <img src="Images/Sign_Up_Page.png" alt="Sign-Up Page" width="300"/>
 </p>
@@ -17,7 +17,7 @@ This page allows new users to create an account.
 </p>
 Confirmation screen showing successful registration.
 
-#### 3. Login Page
+#### 3. Login Page (GET API)
 <p align="center">
   <img src="Images/Login_Page.png" alt="Login Page" width="300"/>
 </p>
@@ -29,13 +29,13 @@ Existing users can log in from this page.
 </p>
 Shows the process of logging into the system.
 
-#### 5. Student Profile
+#### 5. Student Profile (GET API)
 <p align="center">
   <img src="Images/Student_Profile.png" alt="Student Profile" width="300"/>
 </p>
 Displays student information in the profile section.
 
-#### 6. Updating Student Data
+#### 6. Updating Student Data (PUT API)
 <p align="center">
   <img src="Images/Updating_Student_data.png" alt="Updating Student Data" width="300"/>
 </p>

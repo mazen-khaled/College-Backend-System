@@ -80,7 +80,7 @@ com.example.College_System
 ## 🔧 Technologies Used
 - **Backend:** Java, Spring Boot, JPA, Hibernate
 - **Frontend:** HTML, CSS, JavaScript
-- **Database:** H2 Database (in-memory)
+- **Database:** PostgreSQL Database
 - **Build Tool:** Maven
 
 ## 🛠️ Installation & Setup
@@ -91,11 +91,11 @@ com.example.College_System
 ### Backend Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/college-management-system.git
+   git clone https://github.com/mazen-khaled/College-Backend-System
    ```
 2. Navigate to the project directory:
    ```bash
-   cd college-management-system
+   cd College-Backend-System
    ```
 3. Run the application:
    ```bash

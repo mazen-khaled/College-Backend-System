@@ -82,10 +82,10 @@ com.example.College_System
 **POST** Add New Student:
 ```json
 {
-  "studentName": "John Doe",
-  "studentEmail": "johndoe@example.com",
-  "studentPassword": "securepass123",
-  "studentDOB": "2000-05-15",
+  "studentName": "Mazen Khaled",
+  "studentEmail": "kmazen275@gmail.com",
+  "studentPassword": "1234",
+  "studentDOB": "2001-03-14",
   "studentGPA": 3.5
 }
 ```
@@ -97,18 +97,11 @@ GET /v1/students/id/1
 
 ## 💡 Future Improvements
 - Role-based authentication (Admin, Student).
-- Integration with MySQL or PostgreSQL.
 - Enhanced frontend with React or Angular.
 - Implement JWT-based authentication.
 
-## 🤝 Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
-
-## 📝 License
-This project is licensed under the MIT License.
-
 ## 📬 Contact
 For questions or feedback:
-- Email: [your.email@example.com](mailto:your.email@example.com)
+- Email: [kmazen275@gmail.com](mailto:kmazen275@gmail.com)
 
 Enjoy using the **College Management System**! 🎓

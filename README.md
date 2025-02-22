@@ -3,12 +3,48 @@
 ## 📋 Overview
 This **College Management System** is a full-stack application developed using **Spring Boot** for the backend and **HTML, CSS, JavaScript** for the frontend. It is designed to handle student information such as registration, profile management, and authentication.
 
-The system enables administrators and users to:
-- Register new students.
-- Retrieve student information by ID or email.
-- Update student profiles.
-- Delete student records.
-- Handle login functionality with password verification.
+### The system enables administrators and users to:
+
+#### 1. Sign-Up Page
+<p align="center">
+  <img src="Images/Sign_Up_Page.png" alt="Sign-Up Page" width="300"/>
+</p>
+This page allows new users to create an account.
+
+#### 2. Sign-Up Success
+<p align="center">
+  <img src="Images/SignUp_Succeses.png" alt="Sign-Up Success" width="300"/>
+</p>
+Confirmation screen showing successful registration.
+
+#### 3. Login Page
+<p align="center">
+  <img src="Images/Login_Page.png" alt="Login Page" width="300"/>
+</p>
+Existing users can log in from this page.
+
+#### 4. Logging In
+<p align="center">
+  <img src="Images/Logging_In.png" alt="Logging In" width="300"/>
+</p>
+Shows the process of logging into the system.
+
+#### 5. Student Profile
+<p align="center">
+  <img src="Images/Student_Profile.png" alt="Student Profile" width="300"/>
+</p>
+Displays student information in the profile section.
+
+#### 6. Updating Student Data
+<p align="center">
+  <img src="Images/Updating_Student_data.png" alt="Updating Student Data" width="300"/>
+</p>
+Page for updating student data.
+
+#### 7. Updated Student Profile
+<p align="center">
+  <img src="Images/Student_Profile_Updated.png" alt="Updated Student Profile" width="300"/>
+</p>
 
 ## 🚀 Features
 ### Backend (Spring Boot)
@@ -20,6 +56,7 @@ The system enables administrators and users to:
 
 ### Frontend
 - User-friendly login and sign-up forms.
+- **Signup Page:** Allows new students to register by submitting their name, email, password, date of birth, and GPA. Data is sent to the backend via a POST request.
 - Profile display and update functionality.
 - Dynamic interaction using JavaScript for form validation and profile updates.
 
@@ -35,7 +72,7 @@ com.example.College_System
 │   └── ServiceLayer            # Business logic services
 │
 ├── Frontend
-│   ├── HTML_Files              # Login and profile pages
+│   ├── HTML_Files              # Login, sign-up, and profile pages
 │   ├── CSS_Files               # Styling for pages
 │   └── JS_Files                # JavaScript for interactivity
 ```
@@ -67,6 +104,7 @@ com.example.College_System
 
 ### Frontend Setup
 1. Open the HTML files directly in your browser, or use a local server (e.g., **Live Server** extension in VSCode).
+2. To access the sign-up page, open `signUp.html` from the HTML files directory.
 
 ## 📖 API Endpoints
 | Method | Endpoint               | Description                         |
@@ -83,7 +121,7 @@ com.example.College_System
 ```json
 {
   "studentName": "Mazen Khaled",
-  "studentEmail": "kmazen275@gmail.com",
+  "studentEmail": "Mazen@gmail.com",
   "studentPassword": "1234",
   "studentDOB": "2001-03-14",
   "studentGPA": 3.5

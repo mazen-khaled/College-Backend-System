@@ -21,7 +21,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             // Redirect to profile.html with the student ID
             alert("Going to profile");
             window.location.href = `profile.html?studentId=${student.studentId}`;
-
         } else {
             alert('Invalid password');
         }
@@ -30,4 +29,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         console.error('There was a problem with the fetch operation:', error);
         alert('Invalid data');
     });
+});
+
+// Redirect to signup page when "Sign Up" link is clicked
+document.querySelector('a[href="signUp.html"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    window.location.href = 'signUp.html'; // Redirect to signup page
 });

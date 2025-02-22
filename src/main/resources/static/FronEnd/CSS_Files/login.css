@@ -14,10 +14,10 @@ body {
     text-align: center;
     width: 100%; /* Ensure container doesn't overflow */
     max-width: 400px; /* Limit maximum width for better responsiveness */
-    background: #2a2a40;
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Heading Styling */

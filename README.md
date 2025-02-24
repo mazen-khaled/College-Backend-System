@@ -7,7 +7,7 @@ This **College Management System** is a full-stack application developed using *
 
 ### API Documentation Using Swagger
 <p align="center">
-  <img src="Images/Swagger.png" alt="Sign-Up Page" width="300"/>
+  <img src="Images/Swagger.png" alt="Sign-Up Page" width=100%/>
 </p>
 
 #### 1. Sign-Up Page

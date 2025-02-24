@@ -5,6 +5,11 @@ This **College Management System** is a full-stack application developed using *
 
 ### The system enables administrators and users to:
 
+### API Documentation Using Swagger
+<p align="center">
+  <img src="Images/Swagger.png" alt="Sign-Up Page" width="300"/>
+</p>
+
 #### 1. Sign-Up Page
 <p align="center">
   <img src="Images/Sign_Up_Page.png" alt="Sign-Up Page" width="300"/>
